@@ -1,7 +1,14 @@
-# TIL
-Today I Learned
+# 📚Today I Learned✏️
 
-## 나의 다짐
-- Daily commit하기
-- 치팅하지 않는다.
--
+
+
+### 구조
+
+```
+📁AWS
+📁Docker&Kubernetes
+📁Spring
+📁React
+📁ETC
+```
+

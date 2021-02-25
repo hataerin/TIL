@@ -1,37 +1,37 @@
-package hw07;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class BOJ_2563_색종이 {
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        int N = Integer.parseInt(br.readLine());
-        int[][] paper = new int[100][100];
-
-        for (int i = 0; i < N; i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            int row = Integer.parseInt(st.nextToken());
-            int col = Integer.parseInt(st.nextToken());
-            
-            for (int j = row; j < row + 10; j++) {
-                for (int k = col; k < col + 10; k++) {
-                    if (paper[j][k] == 1)
-                        continue;
-                    paper[j][k] = 1;
-                }
-            }
-        }
-
-        int size = 0;
-        for (int i = 0; i < 100; i++)
-            for (int j = 0; j < 100; j++)
-                if (paper[i][j] == 1)
-                    size++;
-
-        System.out.println(size);
-    }
-
+	
+	public static void main(String[] args) {
+		boolean[][] map = new boolean[100][100];
+		
+		int cnt = 0;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		
+		for(int n = 0; n < N; n++) {
+			int w = sc.nextInt();
+			int h = sc.nextInt();
+			for(int i = w; i < w + 10; i++) {
+				for(int j = h; j < h + 10; j++) {
+					map[i][j] = true;
+				}
+			}
+		}
+		
+		for(int i = 0; i < 100; i++) {
+			for(int j = 0; j < 100; j++) {
+				
+				if(map[i][j] == true) {
+					++cnt;
+				}
+			}
+		}
+		System.out.println(cnt);	
+	}
+	
 }

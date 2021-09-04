@@ -1,4 +1,4 @@
-# 📚Today I Learned✏️.
+# 📚Today I Learned✏️
 
 #### 구조
 

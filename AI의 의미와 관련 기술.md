@@ -10,7 +10,7 @@ Sense, Think, Learn, Take Action
 
 초기
 
-- 수동적인 업무를 자동화하는 것
+- 수동적인 업무를 자동화하는 것.
 
 현재
 
